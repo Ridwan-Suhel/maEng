@@ -1,0 +1,41 @@
+@import "global";
+.download-area {
+  .container-fluid {
+    padding: 0px 70px;
+    .photo-gallery-wrapper {
+      background: #fff;
+    }
+    .video-gallery-wrapper {
+      background: #fff;
+    }
+  }
+}
+.data-sheets .co-tab-area-wrapper .division-navs .nav .nav-item a.active {
+  color: $primary-red !important;
+}
+.sheet-lists {
+  li {
+    margin: 7px 0px;
+    a {
+      i {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 28px;
+      }
+      display: block;
+      padding: 10px 10px;
+      background: $primary-blue;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: $primary-red;
+      }
+    }
+  }
+}
+.common-pg-mb-nav .nav-tabs .nav-item.show .nav-link,
+.common-pg-mb-nav .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: $primary-red;
+  border-color: transparent transparent transparent;
+}

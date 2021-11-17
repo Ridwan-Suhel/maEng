@@ -1,0 +1,9 @@
+@import "global";
+.product-section .co-tab-area-wrapper .division-navs .nav .nav-item a.active {
+  color: $primary-red !important;
+  background-color: transparent;
+  border-color: transparent transparent transparent;
+}
+.about-more-desc {
+  background: $light-section-bg;
+}

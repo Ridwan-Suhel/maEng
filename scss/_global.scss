@@ -1,0 +1,175 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.42857143;
+  letter-spacing: 0.03rem;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+/*----------------
+   variable of colors style start
+  ----------------- */
+
+$white-bg: #fff;
+$secondary-section-bg: #efefef;
+$light-section-bg: #f5f5f7;
+$bg-dropdown: #4c44a7;
+$bg-grey: #eaeaea;
+$blue-section-bg: rgba(1, 1, 124, 0.678);
+$footer-bg: #2c2b29;
+$blue-color: #393185;
+$red-color: #e31e24;
+$white-color: #fff;
+$grey-color: #848484;
+$black-color: #333;
+$title-color: #262525;
+$primary-hover: #e31e24;
+$primary-bg-hover: #b42541;
+$primary-red: #b42541;
+$primary-blue: #393185;
+$primary-focus: #e31e24;
+$footer-txt-clr: #b4b6b8;
+
+/*----------------
+   variable of colors style end
+  ----------------- */
+
+// mixins style
+@mixin ul-style-mixin {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+@mixin flex-style-mixin {
+  display: flex;
+  align-items: center;
+}
+
+/*----------------
+   universal style start
+  ----------------- */
+.bg-white {
+  background: $white-color;
+}
+.white-bg {
+  background: $white-bg;
+}
+.bg-red {
+  background: $red-color !important;
+}
+.bg-blue {
+  background-color: $primary-blue;
+}
+.primary-red-bg {
+  background: $primary-red;
+}
+.bg-grey {
+  background: $bg-grey;
+}
+.secondary-section-bg {
+  background: $secondary-section-bg;
+}
+.primary-blue-bg {
+  background: $primary-blue;
+}
+
+.footer-bg {
+  background-color: $footer-bg;
+}
+.redColor {
+  color: $red-color;
+}
+.white {
+  color: $white-color;
+}
+.grey-color {
+  color: $grey-color;
+}
+
+.blueColor {
+  color: $blue-color;
+}
+.blackColor {
+  color: $black-color;
+}
+.primary-red-color {
+  color: $primary-red;
+}
+
+.footer-txt-clr {
+  color: $footer-txt-clr;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.titleColor {
+  color: $title-color;
+}
+a {
+  text-decoration: none;
+}
+.container-fluid {
+  padding: 0px 40px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.paddT-90 {
+  padding-top: 90px;
+}
+.paddB-90 {
+  padding-bottom: 90px;
+}
+.paddT-240 {
+  padding-top: 240px !important;
+}
+// font sizes style strat
+
+.fz-10 {
+  font-size: 10px;
+}
+.fz-12 {
+  font-size: 12px;
+}
+.fz-14 {
+  font-size: 14px;
+}
+.fz-16 {
+  font-size: 16px;
+}
+.fz-17 {
+  font-size: 17px !important;
+}
+.fz-18 {
+  font-size: 18px !important;
+}
+.fz-20 {
+  font-size: 20px !important;
+}
+.fz-22 {
+  font-size: 22px !important;
+}
+.fz-25 {
+  font-size: 25px !important;
+}
+.fz-28 {
+  font-size: 28px;
+}
+
+.fz-35 {
+  font-size: 35px !important;
+}
+
+.box-shadow {
+  box-shadow: 1px 3px 7px 2px rgba(82, 82, 82, 0.144);
+}
+
+/*----------------
+   universal style end
+  ----------------- */

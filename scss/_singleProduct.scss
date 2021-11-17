@@ -1,0 +1,45 @@
+@import "global";
+.right-menu {
+  width: 650px;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  right: -650px;
+  top: 0px;
+  background: #fff;
+  z-index: 9999999;
+  .right-menu-list {
+    li {
+      a {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $primary-red;
+        }
+      }
+    }
+  }
+}
+.right-menu.active {
+  right: 0px;
+}
+.overlay.active {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.171);
+  z-index: 999999;
+}
+.prPageDropdownMenu {
+  li {
+    a {
+      padding: 10px 15px;
+      display: block;
+      border-bottom: 1px solid rgba(221, 221, 221, 0.562);
+    }
+    &:last-child a {
+      border-bottom: 0px;
+    }
+  }
+}

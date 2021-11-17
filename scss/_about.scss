@@ -1,0 +1,162 @@
+@import "global";
+// about page style strat
+.common-section {
+  position: relative;
+  .common-page-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    .page-top-nav {
+      .primary-blue-bg {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background: $primary-red;
+        }
+      }
+      a {
+        &:hover {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.common-pg-mb-nav {
+  display: none;
+}
+// common hero bg & content
+.common-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  .section-title {
+    padding-top: 200px;
+    text-align: left;
+  }
+}
+// about page company style
+.co-tab-area-wrapper {
+  .division-navs {
+    .nav {
+      justify-content: center;
+      border-bottom: 0px;
+      .nav-item {
+        a {
+          font-weight: 600;
+        }
+        a.active {
+          color: $blue-color !important;
+          border-color: transparent transparent transparent !important;
+          position: relative;
+        }
+        a.active:before {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 100%;
+          background: $primary-blue;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+// about page company group style
+.comapny-group-area {
+  .company-gr-slider-wrapper {
+    .coGr-txt-content {
+      p {
+        line-height: 30px;
+      }
+    }
+  }
+  //   use same as section background for fade slider effect
+  .swiper-slide {
+    background: $secondary-section-bg;
+  }
+}
+// why we company area style
+.whyWe-area {
+  background-image: url(../images/whyWe-images/section-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .whyWe-content-wrapper {
+    .row {
+      .col-md-2 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+// chairman area style start
+.company-chairman-area {
+  padding-left: 30px;
+  padding-right: 30px;
+  .chairman-area-content {
+    .section-title {
+      text-align: left;
+    }
+  }
+}
+
+// corporate area
+.responsibility-wrapper,
+.common-before-bullet-wrapper {
+  ul {
+    li {
+      position: relative;
+      margin-left: 30px;
+    }
+    li::before {
+      position: absolute;
+      top: 9px;
+      left: -30px;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #e55054;
+      z-index: 9999;
+    }
+  }
+}
+.corporate-res-area {
+  .swiper-pagination-bullet {
+    background: transparent;
+    border-radius: 0px;
+    border: 1px solid $blue-color;
+  }
+  .swiper-pagination-bullet-active {
+    background: $blue-color;
+  }
+}
+.corporate-res-area {
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 5px 0px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 45%;
+  }
+  .mySwiper {
+    padding: 0px 40px;
+  }
+}
+.global-area {
+}

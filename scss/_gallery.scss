@@ -1,0 +1,20 @@
+@import "global";
+.gallery-section {
+  .common-page-content {
+    ul {
+      li {
+        a {
+        }
+        a.active {
+          background: $primary-red;
+          color: #fff;
+          border-color: transparent transparent transparent;
+        }
+      }
+    }
+  }
+}
+.gallery-section .nav-tabs .nav-item.show .nav-link,
+.gallery-section .nav-tabs .nav-link.active {
+  background-color: $primary-red;
+}
